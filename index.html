@@ -1,0 +1,34 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Get Ten Seconds!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="./static/js/jquery-3.3.1.min.js"></script>
+  <script src="./static/js/detectmobilebrowser.js"></script>
+  <script src="main.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="intro">
+      <div id="intro-content">
+        <div class="title">Get the ten seconds! Bro!</div>
+        <div class="description" id="mobile">Touch the screen to start and touch again to stop</div>
+        <div class="description" id="pc">Click space or just click your mouse to start and click again to stop</div>
+      </div>
+      <div class="time" id="time"></div>
+    </div>
+    <div class="result" id="success">
+      <div>God job!</div>
+      <div class="result-info">You got exact ten seconds!</div>
+      <button class="againBtn" id="successAgain">Try again</button>
+    </div>
+    <div class="result" id="fail">
+      <div class="result-info">Challenge failed</div>
+      <button class="againBtn" id="failAgain">Try again</button>
+    </div>
+  </div>
+</body>
+</html>
