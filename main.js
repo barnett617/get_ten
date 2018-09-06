@@ -60,7 +60,7 @@ var isMobile = function() {
  * 初始化
  */
 function initial() {
-  debugger
+  
   // 初始时间
   $('#time').text(beginTime);
   // 初始动作状态
@@ -80,7 +80,7 @@ function initial() {
  * 开启计时
  */
 var startClock = function() {
-  debugger
+  
   var showTime;
   var start = new Date().valueOf();
   clock = setInterval(function() {
@@ -124,9 +124,9 @@ var handleSuccess = function() {
 function handleFail() {
   $('#intro-content').hide();
   $('#fail').show();
-  debugger
+  
   $('#failAgain').click(function() {
-    debugger
+    
     initial();
   });
 };
@@ -147,7 +147,7 @@ var handleGameEnd = function() {
  * 用户发生动作
  */
 var userAction = function() {
-  debugger
+  
   if (gameStatus === gameStatusEnum.READY) {
     gameStatus = gameStatusEnum.ING;
     startClock();
