@@ -44,9 +44,9 @@ var os = function() {
 
 var isMobile = function() {
   if(os.isAndroid || os.isPhone){
-    alert('mobile');
+    // alert('mobile');
   } else if(os.isTablet) {
-    alert('tablet');
+    // alert('tablet');
   } else {
   }
   if (os.isAndroid || os.isPhone || os.isTablet) {
