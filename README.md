@@ -1,6 +1,14 @@
 # get_ten
 A game of getting ten seconds
 
+## 访问地址
+
+[点我](https://dawnfar.top/)
+
+[备用地址](https://barnett617.github.io/get_ten)
+
+[fork me on github](https://github.com/barnett617/get_ten)
+
 ## 背景
 
 灵感来源于前阵子（2018年07月21日）去北京国家会议中心参加[看雪安全峰会](https://www.bagevent.com/event/1134294)玩的按十秒送书小游戏，和上周去南锣鼓巷看见很多家饮品店也有这个游戏，所以想到自己实现一个这样的小玩意，并借此运用一些前端的知识。这次专门考虑了移动端的访问（上次做了个[苹果发布会倒计时](https://barnett617.github.io/apple_time)，没有考虑到移动端的使用体验，发给朋友去测试，发现大多都是在移动端打开，而且是在微信中访问，真的体会到如今`移动优先`的重要性。因为如今移动端的web应用传播性显然要快于电脑，因为大家大部分时间是在移动互联网的世界，而打开电脑通过浏览器访问页面的条件显得有点苛刻）
@@ -71,3 +79,10 @@ if (event && event.stopPropagation) {
 - [ ] 小程序版本
 - [ ] 毫秒数不总显示三位数
 
+## 参考链接
+
+[cnblogs-JavaScript：事件对象Event和冒泡](https://www.cnblogs.com/smyhvae/p/8413602.html)
+[juejin-JS 中的事件绑定、事件监听、事件委托是什么？](https://juejin.im/entry/57ea329e67f3560057ad41a6)
+[csdn-JS制作计时器（毫秒级），简单、易懂](https://blog.csdn.net/qq_35616850/article/details/78425524)
+[Detect Mobile Browsers](http://detectmobilebrowsers.com/)
+[csdn-js判断客户端是pc端还是移动端](https://blog.csdn.net/kongjiea/article/details/17612899)
