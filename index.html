@@ -8,15 +8,15 @@
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   <script src="./static/js/jquery-3.3.1.min.js"></script>
   <!-- <script src="./static/js/detectmobilebrowser.js"></script> -->
-  <script src="main.js"></script>
+  <script src="./static/js/util.js"></script>
+  <script src="./static/js/main.js"></script>
 </head>
 <body>
   <div class="container">
     <div class="intro">
       <div id="intro-content">
-        <div class="title">Get the ten seconds! Bro!</div>
-        <div class="description" id="mobile">Touch the screen to start and touch again to stop</div>
-        <div class="description" id="pc">Click space to start and click again to stop</div>
+        <div class="title">挑战十秒</div>
+        <div class="description">点击屏幕开始游戏，再次点击停止</div>
         <!-- <div class="description" id="pc">Click space or just click your mouse to start and click again to stop</div> -->
       </div>
       <div class="time" id="time"></div>
@@ -24,11 +24,12 @@
     <div class="result" id="success">
       <div>God job!</div>
       <div class="result-info">You got exact ten seconds!</div>
-      <button class="againBtn" id="successAgain">Try again</button>
+      <button class="againBtn" id="successAgain">再来一次</button>
     </div>
     <div class="result" id="fail">
-      <div class="result-info">Challenge failed</div>
-      <button class="againBtn" id="failAgain">Try again</button>
+      <!-- <div class="result-info">Challenge failed</div> -->
+      <div class="result-info">挑战失败</div>
+      <button class="againBtn" id="failAgain">再来一次</button>
     </div>
   </div>
 </body>

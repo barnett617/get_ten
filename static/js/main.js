@@ -60,27 +60,24 @@ var isMobile = function() {
  * 初始化
  */
 function initial() {
-  
   // 初始时间
   $('#time').text(beginTime);
   // 初始动作状态
   gameStatus = gameStatusEnum.READY;
+  // 解绑用户动作的监听事件
+  $(document).unbind("click");
   // 初始内容显示
   $('#intro-content').show();
   $('#success').hide();
   $('#fail').hide();
-  if (mobileDevice) {
-    $('#pc').hide();
-  } else {
-    $('#mobile').hide();
-  }
+  // 监听用户动作
+  listenAction();
 };
 
 /**
  * 开启计时
  */
 var startClock = function() {
-  
   var showTime;
   var start = new Date().valueOf();
   clock = setInterval(function() {
@@ -126,7 +123,14 @@ function handleFail() {
   $('#fail').show();
   
   $('#failAgain').click(function() {
-    
+    // 阻止冒泡，防止按钮点击事件后，鼠标点击事件的触发
+    event = event || window.event;
+
+    if (event && event.stopPropagation) {
+        event.stopPropagation();
+    } else {
+        event.cancelBubble = true;
+    }
     initial();
   });
 };
@@ -146,8 +150,7 @@ var handleGameEnd = function() {
 /**
  * 用户发生动作
  */
-var userAction = function() {
-  
+function userAction() {
   if (gameStatus === gameStatusEnum.READY) {
     gameStatus = gameStatusEnum.ING;
     startClock();
@@ -168,19 +171,8 @@ var listenAction = function() {
       userAction();
     });
   } else {
-    // $(document).bind('click', function() {
-    //   userAction();
-    // });
-    $(document).keyup(function(event) {
-      if(event.keyCode === 32) {
-        userAction();
-      }
-    });
+    $(document).bind('click', userAction);
   }
-};
-
-var showScore = function() {
-
 };
 
 $(document).ready(function () {
@@ -189,13 +181,6 @@ $(document).ready(function () {
 
   // 初始化
   initial();
-
-
-  // 监听空格或触屏
-  listenAction();
-
-  // 显示结果
-  showScore();
 });
 
 
