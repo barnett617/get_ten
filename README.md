@@ -78,11 +78,12 @@ if (event && event.stopPropagation) {
 - [x] 鼠标控制游戏动作
 - [ ] 小程序版本
 - [ ] 毫秒数不总显示三位数
+- [ ] 统计历史成绩
 
 ## 参考链接
 
-[cnblogs-JavaScript：事件对象Event和冒泡](https://www.cnblogs.com/smyhvae/p/8413602.html)
-[juejin-JS 中的事件绑定、事件监听、事件委托是什么？](https://juejin.im/entry/57ea329e67f3560057ad41a6)
-[csdn-JS制作计时器（毫秒级），简单、易懂](https://blog.csdn.net/qq_35616850/article/details/78425524)
-[Detect Mobile Browsers](http://detectmobilebrowsers.com/)
-[csdn-js判断客户端是pc端还是移动端](https://blog.csdn.net/kongjiea/article/details/17612899)
+- [cnblogs-JavaScript：事件对象Event和冒泡](https://www.cnblogs.com/smyhvae/p/8413602.html)
+- [juejin-JS 中的事件绑定、事件监听、事件委托是什么？](https://juejin.im/entry/57ea329e67f3560057ad41a6)
+- [csdn-JS制作计时器（毫秒级），简单、易懂](https://blog.csdn.net/qq_35616850/article/details/78425524)
+- [Detect Mobile Browsers](http://detectmobilebrowsers.com/)
+- [csdn-js判断客户端是pc端还是移动端](https://blog.csdn.net/kongjiea/article/details/17612899)
